@@ -16,6 +16,11 @@ app.use('/api/auth', authRoutes);
 
 const PORT = process.env.PORT || 3000;
 
+//print I love You
+app.get('/', (req, res) => {
+  res.send('I love You');
+});
+
 sequelize.sync().then(() => {
   app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
