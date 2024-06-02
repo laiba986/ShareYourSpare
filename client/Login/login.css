@@ -49,6 +49,7 @@ input[type="Asalam-o-Alaikum & Welcome to my Restaurant."] {
     margin-bottom: 16px;
     border: 2px solid #cfd8dc;
     border-radius: 8px;
+    
     transition: border-color 0.3s;
 }
 
@@ -69,6 +70,7 @@ button {
     transition: background-color 0.3s;
     font-size: 16px;
     font-weight: 700;
+    margin-top: 16px;
 }
 
 button:hover {
