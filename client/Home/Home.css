@@ -259,3 +259,21 @@ footer {
         flex-basis: 100%;
     }
 }
+
+.login-btn{
+    background: #000000;
+    color: #ffffff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+    /* on right side of page */
+    position: absolute;
+    right: 20px;
+    
+}
+
+.login-btn:hover{
+    background: #c0392b;
+}
+
