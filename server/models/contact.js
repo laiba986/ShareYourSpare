@@ -1,5 +1,3 @@
-// server/models/Contact.js
-
 const db = require('../config/database');
 
 const Contact = {

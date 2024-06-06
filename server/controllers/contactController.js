@@ -1,5 +1,3 @@
-// server/controllers/contactController.js
-
 const Contact = require('../models/contact');
 
 exports.createContact = (req, res) => {
