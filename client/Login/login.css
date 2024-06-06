@@ -43,7 +43,7 @@ label {
 }
 
 input[type="text"],
-input[type="Asalam-o-Alaikum & Welcome to my Restaurant."] {
+input[type="password"] {
     width: 100%;
     padding: 12px;
     margin-bottom: 16px;

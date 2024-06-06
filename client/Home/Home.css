@@ -116,7 +116,7 @@ section h2 {
     color: #2c3e50;
 }
 
-#about, #services, #donors, #contact {
+#about, #services, #donors {
     background: #fff;
     padding: 60px 20px;
     border-radius: 10px;
@@ -267,7 +267,6 @@ footer {
     text-decoration: none;
     border-radius: 5px;
     transition: background 0.3s;
-    /* on right side of page */
     position: absolute;
     right: 20px;
     
