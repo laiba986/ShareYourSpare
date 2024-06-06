@@ -12,3 +12,8 @@ CREATE TABLE contacts (
   message TEXT NOT NULL,
   createdAt TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
+
+USE donation_db;
+SHOW TABLES;
+
+DESCRIBE contacts;
