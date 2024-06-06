@@ -3,26 +3,19 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const dotenv = require('dotenv');
-const { sequelize } = require('./models');
+const path = require('path');
+const contactRoutes = require('./routes/contactRoutes');
 
 dotenv.config();
-
-const authRoutes = require('./routes/authRoutes');
 
 const app = express();
 
 app.use(bodyParser.json());
-app.use('/api/auth', authRoutes);
+app.use(express.static(path.join(__dirname, '..', 'public')));
+app.use(contactRoutes);
 
 const PORT = process.env.PORT || 3000;
 
-//print I love You
-app.get('/', (req, res) => {
-  res.send('I love You');
-});
-
-sequelize.sync().then(() => {
-  app.listen(PORT, () => {
-    console.log(`Server is running on port ${PORT}`);
-  });
+app.listen(PORT, () => {
+  console.log(`Server is running on port ${PORT}`);
 });
