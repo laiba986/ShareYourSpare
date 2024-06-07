@@ -10,3 +10,8 @@ exports.createContact = (req, res) => {
     res.status(200).send('Message sent successfully');
   });
 };
+
+exports.viewContacts = (req,res) => {
+  const name = Contact.name;
+  console.log(name);
+}
