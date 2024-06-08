@@ -1,11 +1,11 @@
-document.getElementById('contactForm').addEventListener('submit', async function(event) {
+document.getElementById('contactForm').addEventListener('submit', async function (event) {
     event.preventDefault();
-    
+
     const formData = new FormData(this);
     const data = Object.fromEntries(formData);
 
     try {
-        const response = await fetch('/contact', {
+        const response = await fetch('http://localhost:3000/api/contact', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'

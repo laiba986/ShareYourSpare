@@ -7,34 +7,33 @@
   <title>Share The Spare</title>
   <link rel="stylesheet" href="contact.css">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <script defer src="contact.js"></script>
 </head>
 
 <body>
+  <div class="contact-form">
+    <h2>Contact Us</h2>
+    <form id="contactForm">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
 
-  <body>
-    <div class="contact-form">
-      <h2>Contact Us</h2>
-      <form action="contact.php" method="post">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
 
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
+      <label for="subject">Subject:</label>
+      <input type="text" id="subject" name="subject">
 
-        <label for="subject">Subject:</label>
-        <input type="text" id="subject" name="subject">
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" required></textarea>
 
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" required></textarea>
-
-        <button type="submit">Send Message</button>
-      </form>
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 Share The Spare. All Rights Reserved.</p>
     </div>
-    <footer>
-      <div class="container">
-        <p>&copy; 2024 Share The Spare. All Rights Reserved.</p>
-      </div>
-    </footer>
-  </body>
+  </footer>
+</body>
 
 </html>
