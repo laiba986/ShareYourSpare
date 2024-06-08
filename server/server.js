@@ -1,11 +1,11 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const dotenv = require('dotenv');
-const path = require('path');
-const contactRoutes = require('./routes/contactRoutes');
 const cors = require('cors');
+const path = require('path');
 
 dotenv.config();
+const contactRoutes = require('./routes/contactRoutes');
 
 const app = express();
 app.use(cors());
@@ -18,5 +18,5 @@ app.use('/api', contactRoutes);
 const PORT =  3000;
 
 app.listen(PORT, () => {
-  console.log(`Server is running on port ${PORT}`);
+  console.log(`http://localhost:${PORT}`);
 });
