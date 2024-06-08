@@ -1,12 +1,16 @@
 const mysql = require('mysql2');
+const dotenv = require('dotenv');
+const e = require('express');
+dotenv.config();
+
 
 // Create a connection pool
 const pool = mysql.createPool({
-    host: '127.0.0.1',
-    user: 'root',
-    password: 'admin12345', // replace 'your_password' with your actual password
-    database: 'donation_db', // specify the database you want to connect to
-    port: 3301
+    host: process.env.host,
+    user: process.env.user,
+    password: process.env.password, // replace 'your_password' with your actual password
+    database: process.env.database, // specify the database you want to connect to
+    port: process.env.port,
 });
 
 // Connect to the database
